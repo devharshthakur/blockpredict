@@ -5,6 +5,6 @@ import { PythonService } from './python.service';
 
 @Module({
   controllers: [BlockchainController],
-  providers:[BlockchainApiService,PythonService]
+  providers: [BlockchainApiService, PythonService],
 })
 export class BlockchainModule {}

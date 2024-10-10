@@ -34,7 +34,9 @@ export class PythonService {
       };
 
       // Spawn a new Python process
-      const pythonProcess = spawn('python', [path.join(__dirname, 'predict.py')]);
+      const pythonProcess = spawn('python', [
+        path.join(__dirname, 'predict.py'),
+      ]);
 
       let dataString = '';
       let errorString = '';
