@@ -1,0 +1,50 @@
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore virtual environment directories
+venv/
+env/
+ENV/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore compiled C extensions
+*.so
+
+# Ignore package directories
+node_modules/
+dist/
+build/
+models/
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore coverage reports
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+
+# Ignore test output
+.junit/
+test-results/
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.swp
+*.swo

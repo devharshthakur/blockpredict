@@ -7,9 +7,9 @@ pragma solidity ^0.8.20;
  * @dev Manages weights for three prediction models and updates them based on accuracy.
  */
 contract NiftyITPrediction {
-    uint256 public weight1 = 100; // Weight for Model 1
-    uint256 public weight2 = 100; // Weight for Model 2
-    uint256 public weight3 = 100; // Weight for Model 3
+    uint256 public weight1 = 100; // Weight for Model 1 (CompVsnifty)
+    uint256 public weight2 = 100; // Weight for Model 2 (NasdaqVsnifty)
+    uint256 public weight3 = 100; // Weight for Model 3 (Sentiment Analysis)
 
     address public owner;
 
@@ -26,10 +26,10 @@ contract NiftyITPrediction {
     }
 
     /**
-     * @dev Adjusts the model weights based on the comparison between model predictions and actual events.
-     * @param model1 Prediction from Model 1.
-     * @param model2 Prediction from Model 2.
-     * @param model3 Prediction from Model 3.
+     * @dev Processes predictions from all models and adjusts weights accordingly.
+     * @param model1 Prediction from Model 1 (CompVsnifty).
+     * @param model2 Prediction from Model 2 (NasdaqVsnifty).
+     * @param model3 Prediction from Model 3 (Sentiment Analysis).
      * @param actualEvent The actual outcome (0 or 1).
      */
     function processPredictions(uint256 model1, uint256 model2, uint256 model3, uint256 actualEvent) public onlyOwner {
@@ -64,5 +64,14 @@ contract NiftyITPrediction {
      */
     function getWeights() public view returns (uint256, uint256, uint256) {
         return (weight1, weight2, weight3);
+    }
+    /**
+     * @dev Resets the current weights of the models.
+     */
+     function resetWeights() public onlyOwner {
+        weight1 = 100; // Reset weight1 to default value
+        weight2 = 100; // Reset weight2 to default value
+        weight3 = 100; // Reset weight3 to default value
+        emit WeightsUpdated(weight1, weight2, weight3);
     }
 }
