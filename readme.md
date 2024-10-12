@@ -68,7 +68,7 @@ To start the frontend client application:
 
 ```bash
 cd client
-pnpm start
+pnpm dev
 ```
 
 ### Running the Server
