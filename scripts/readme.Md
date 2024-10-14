@@ -8,13 +8,13 @@ This directory contains scripts utilized in the BlockPredict project.
 
 The scripts in this directory serve the following purposes:
 
-- 🧪 Testing and verifying various functionalities.
-- 📜 Generating specific logs.
+- 🧪 Testing and verifying various functionalities for personel use.
+- 📜 Generating specific logs for personel devolopment purposes.
 - 👩‍💻 Intended solely for development by individual developers.
 - 🚫 Not suitable for production environments.
 - 💡 Developers are encouraged to add their own scripts for development or debugging.
 - 🔒 Changes should not be included in version control.
-- 🔄 Maintain the original state of this directory in the upstream repository.
+- 🔄 Maintain the original state of this directory as in the upstream.
 
 ## 📝 Script: `checkOwner.js`
 
@@ -53,3 +53,4 @@ npm install
 - 🔄 Regularly update block metadata to maintain accurate ownership information.
 - ⚠️ Handle any errors or exceptions that may occur during script execution.
 
+> Soon I will create a typescript environment so that you can write the code in typescript 
