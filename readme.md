@@ -17,7 +17,7 @@ Welcome to the **BlockPredict** project! This README provides an overview of the
 
 ## Features
 
-✨ **Accurate Predictions**: Utilizing state-of-the-art algorithms to provide reliable blockchain predictions.
+✨ **Accurate Predictions**: Utilizing state-of-the-art algorithms to provide reliable blockchain predictions and show the simulation.
 
 🔗 **Blockchain Integration**: Seamless integration with blockchain networks.
 
@@ -88,14 +88,12 @@ To deploy and interact with smart contracts:
 cd blockchain
 pnpm hardhat node
 # In a diff terminal
-pnpm hardhat run scripts/deploy.js
+pnpm deploy
 ```
 
 ## Contributing
 
-We welcome contributions from the community! Please read our contributing guidelines to get started.
-
-**Note:** The `CONTRIBUTING.md` file is coming soon. Stay tuned for updates!
+We welcome contributions from the community! Please read `CONTRIBUTION.md` to get started.
 
 ## License
 
