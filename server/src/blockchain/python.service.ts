@@ -4,20 +4,20 @@ import * as path from 'path';
 
 /**
  * Python Service
- * 
+ *
  * This service is responsible for interacting with a Python script that performs model predictions.
- * 
+ *
  * Key Responsibilities:
  * 1. **Sending Inputs**: The service sends input data to the Python script. This data is typically required for making predictions.
  * 2. **Model Predictions**: The Python script utilizes pre-trained machine learning models to make predictions based on the input data.
  * 3. **Returning Predictions**: Once the Python script has made its predictions, the results are sent back to the backend. These predictions can then be used for further processing or decision-making within the application.
- * 
+ *
  * Usage:
  * - This service can be invoked whenever predictions from the machine learning models are needed.
  * - Ensure that the input data format is compatible with the Python script's requirements.
  * - Handle the returned predictions appropriately in the backend to integrate them into the application's workflow.
- * 
- * * 
+ *
+ * *
  * Note:
  * - Ensure that the Python environment is correctly set up and that the required models are pre-trained and available.
  * - Proper error handling should be implemented to manage any issues during the interaction with the Python script.

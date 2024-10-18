@@ -2,21 +2,21 @@
 
 /**
  * This service interacts with a blockchain smart contract to manage and update model weights.
- * 
+ *
  * Key functionalities include:
  * - Establishing a connection to a local Ethereum blockchain node using ethers.js.
  * - Creating a signer using a private key from environment variables.
  * - Interacting with a specific smart contract using its address and ABI.
- * 
+ *
  * The service provides the following methods:
- * 
+ *
  * 1. `getWeights`: Fetches the current weights of the models from the blockchain contract.
  *    - Returns an object containing the weights of three models.
- * 
+ *
  * 2. `resetWeights`: Resets the weights of the models on the blockchain contract.
  *    - Checks if the caller is the owner of the contract before resetting the weights.
  *    - Throws an error if the caller is not the owner.
- * 
+ *
  * 3. `processPredictions`: Sends model predictions and the actual event to the smart contract for weight updates.
  *    - Takes predictions from three models and the actual event outcome as parameters.
  *    - Sends these values to the smart contract to update the weights accordingly.

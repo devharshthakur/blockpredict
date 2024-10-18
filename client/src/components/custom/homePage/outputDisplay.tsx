@@ -1,14 +1,29 @@
-// components/OutputCard.tsx
-
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2, XCircle, AlertTriangle } from "lucide-react";
+/**
+ * @file outputDisplay.tsx
+ * @description This file contains the `OutputDisplay` component, which is responsible for rendering the prediction results and model weights in a card layout. The component takes `outputData` as a prop, which includes predictions and weights from different models.
+ *
+ * The component displays:
+ * - Model Predictions: A card showing the predictions from different models.
+ * - Final Prediction: A card showing the final prediction based on the model predictions.
+ * - Model Weights: A card showing the weights of each model used in the final prediction.
+ * - Interpretation Note: A note explaining the interpretation of the final prediction and model weights.
+ *
+ * The component uses various UI elements from the `@/components/ui/card` library and icons from the `lucide-react` library to enhance the visual representation of the data.
+ *
+ * @module OutputDisplay
+ * @param {OutputDisplayProps} props - The props for the `OutputDisplay` component.
+ * @param {OutputData} props.outputData - The data containing model predictions and weights.
+ * @returns {JSX.Element} The rendered `OutputDisplay` component.
+ */
 import { OutputData } from "@/lib/types";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { CheckCircle2, XCircle, AlertTriangle } from "lucide-react";
 
-type OutputCardProps = {
+type OutputDisplayProps = {
   outputData: OutputData;
 };
 
-export default function OutputCard({ outputData }: OutputCardProps) {
+export default function OutputDisplay({ outputData }: OutputDisplayProps) {
   return (
     <Card>
       <CardHeader>
