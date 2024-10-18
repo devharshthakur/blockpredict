@@ -14,7 +14,12 @@ contract NiftyITPrediction {
     address public owner;
 
     event WeightsUpdated(uint256 weight1, uint256 weight2, uint256 weight3);
-    event PredictionProcessed(uint256 model1, uint256 model2, uint256 model3, uint256 actualEvent);
+    event PredictionProcessed(
+        uint256 model1,
+        uint256 model2,
+        uint256 model3,
+        uint256 actualEvent
+    );
 
     modifier onlyOwner() {
         require(msg.sender == owner, "Caller is not the owner");
@@ -32,7 +37,12 @@ contract NiftyITPrediction {
      * @param model3 Prediction from Model 3 (Sentiment Analysis).
      * @param actualEvent The actual outcome (0 or 1).
      */
-    function processPredictions(uint256 model1, uint256 model2, uint256 model3, uint256 actualEvent) public onlyOwner {
+    function processPredictions(
+        uint256 model1,
+        uint256 model2,
+        uint256 model3,
+        uint256 actualEvent
+    ) public onlyOwner {
         adjustWeight(model1, actualEvent, 1);
         adjustWeight(model2, actualEvent, 2);
         adjustWeight(model3, actualEvent, 3);
@@ -46,7 +56,11 @@ contract NiftyITPrediction {
      * @param actualEvent The actual outcome.
      * @param modelNumber The model number (1, 2, or 3).
      */
-    function adjustWeight(uint256 prediction, uint256 actualEvent, uint8 modelNumber) internal {
+    function adjustWeight(
+        uint256 prediction,
+        uint256 actualEvent,
+        uint8 modelNumber
+    ) internal {
         if (prediction == actualEvent) {
             if (modelNumber == 1) weight1 += 5;
             else if (modelNumber == 2) weight2 += 5;
@@ -68,7 +82,7 @@ contract NiftyITPrediction {
     /**
      * @dev Resets the current weights of the models.
      */
-     function resetWeights() public onlyOwner {
+    function resetWeights() public onlyOwner {
         weight1 = 100; // Reset weight1 to default value
         weight2 = 100; // Reset weight2 to default value
         weight3 = 100; // Reset weight3 to default value

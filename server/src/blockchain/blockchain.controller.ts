@@ -1,17 +1,24 @@
 // server/src/blockchain/blockchain.controller.ts
 /**
  * This file defines a controller for handling blockchain-related API endpoints.
- * 
+ *
  * The primary responsibilities of this controller include:
  * 1. Receiving incoming predictions from clients.
  * 2. Sending these predictions to the blockchain for processing.
  * 3. Fetching updated weights from the blockchain and returning them to the clients.
- * 
+ *
  * This controller acts as an intermediary between the client applications and the blockchain,
  * ensuring that predictions are properly handled and the latest data is retrieved.
  */
 
-import { Controller,Get, Post, Body, HttpException, HttpStatus } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  HttpException,
+  HttpStatus,
+} from '@nestjs/common';
 import { BlockchainApiService } from './blockchain-api.service';
 import { PythonService } from './python.service';
 
@@ -28,7 +35,6 @@ export class BlockchainController {
     return weights;
   }
 
-  
   @Post('reset-weights')
   async resetWeights() {
     try {

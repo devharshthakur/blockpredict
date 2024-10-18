@@ -9,7 +9,14 @@
     "dotenv": "^16.4.5",
     "ethers": "^6.13.3",
     "hardhat": "^2.22.12",
+    "prettier": "^3.0.0",
+    "prettier-plugin-solidity": "^1.4.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.2"
+  },
+  "scripts": {
+    "start": "pnpm hardhat node",
+    "deploy": "pnpm hardhat run scripts/deploy.ts --network localhost",
+    "format": "prettier --write '**/*.{ts,tsx,sol}'"
   }
 }

@@ -1,0 +1,46 @@
+{
+    "teamMembers": [
+        { 
+          "name": "Harsh Thakur", 
+          "responsibility": "Developed XGBoost models for stock prediction", 
+          "subject": "Machine Learning, Time Series Analysis",
+          "image": "/male.png", 
+          "Github": "https://linkedin.com/in/johndoe" 
+        },
+        { 
+          "name": "Ayush Mohite", 
+          "responsibility": "Designed and implemented the frontend and backend architecture", 
+          "subject": "Full Stack Development, API Design",
+          "image": "/male.png", 
+          "Github": "https://github.com/ayush005-wq" 
+        },
+        { 
+          "name": "Sanket Bole", 
+          "responsibility": "Implemented smart contracts for weight management", 
+          "subject": "Blockchain Technology, Solidity",
+          "image": "/male.png", 
+          "Github": "https://github.com/sanketbole" 
+        },
+        { 
+          "name": "Gauri Naik", 
+          "responsibility": "Developed BERT model for sentiment analysis of financial news", 
+          "subject": "Natural Language Processing, Deep Learning",
+          "image": "/female.png", 
+          "Github": "https://github.com/gauri-a11" 
+        }
+      ]
+      ,
+    "technologies": [
+      {
+        "name": "Next.js",
+        "icon": "/nextjs.png",
+        "category": "Frontend"
+      },
+      {
+        "name": "Tailwind CSS",
+        "icon": "/tailwind-css.png",
+        "category": "Frontend"
+      }
+    ]
+  }
+  
