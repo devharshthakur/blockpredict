@@ -65,10 +65,11 @@ export default function About() {
             Welcome to our project! We are a group of enthusiastic college
             students from Vidyalankar Institute of Technology, Wadala, Mumbai,
             working together to build an intelligent simulation for prediction
-            system for the stock market. Our project, "Stock Market Prediction
-            with Blockchain-Based Weight Management," combines various machine
-            learning models, sentiment analysis model, and blockchain to deliver
-            a comprehensive, data-driven approach to stock market forecasting.
+            system for the stock market. Our project, &quot;Stock Market
+            Prediction with Blockchain-Based Weight Management,&quot; combines
+            various machine learning models, sentiment analysis model, and
+            blockchain to deliver a comprehensive, data-driven approach to stock
+            market forecasting.
           </p>
         </section>
 

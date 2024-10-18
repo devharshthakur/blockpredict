@@ -20,7 +20,7 @@
  */
 import { TeamMember } from "@/lib/types";
 import Image from "next/image";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 interface TeamMemberCardProps {
   member: TeamMember;
